@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue.js·TodoMVC</title>
+	<link type="text/css" rel="stylesheet" href="./todo.css">
+
+</head>
+<body>
+	<div class="container">
+		
+		<div id="wrap1">
+			<h1>Vue.js</h1>
+			<p>Example</p>
+			<a href="https://github.com/tastejs/todomvc/tree/gh-pages/examples/vue">Source</a>
+			<hr style="border:1px dashed #DDD" />
+			<div class="content1">
+				<p class="con">Vue.js provides efficient MV VM data bingdings with a simple and flexible API, It usesplain JavaScript object models,DOM-based templating and extendable directive and filters.</p>
+				<a  class="angle" href="http://vuejs.org/">Vue.js</a>
+			</div>
+			<hr style="border:1px dashed #DDD" />
+			<div class="list">
+				<h2>Official Resources</h2>
+				<ul class="list1">
+					<li><a href="http://vuejs.org/guide/">Documentation</a></li>
+					<li><a href="http://vuejs.org/api/">API Reference</a></li>
+					<li><a href="http://vuejs.org/examples/">Example</a></li>
+					<li><a href="https://github.com/vuejs/vue">Vue.js On GitHub</a></li>
+				</ul>
+				<h2>Community</h2>
+				<ul class="list2">
+					<li><a href="https://twitter.com/vuejs">Twitter</a></li>
+					<li><a href="https://gitter.im/vuejs/vue">Gitter Channel</a></li>
+					<li><a href="https://github.com/vuejs/Discussion/issues">Disgussion On GitHub</a></li>
+				</ul>
+			</div>
+			<hr style="border:1px dashed #DDD" />
+			<div class="content2">
+				<p>If you have other helpful links share, or find any of the links above no longer work, please <a href="https://github.com/tastejs/todomvc/issues">let us kown</a>.</p>
+			</div>
+		</div>
+		
+		<div id="wrap2">
+			<p class="todos">todos</p>
+			<div class="todo-container">
+				<input
+				type="text"
+				id="text"
+				placeholder="What needs to be done?"
+				onkeydown="handler(event)"
+				>
+				<ul id="list">
+				</ul>
+				<div class="button-bar hide">
+					<div class="left">
+						<span id="item-left">0</span>
+						item Left
+					</div>
+					<div class="center">
+						<button id="all" onclick="allDisplay()">all</button>
+						<button id="active" onclick="activeDisplay()">active</button>
+						<button id="completed" onclick="completedDisplay()">completed</button>
+					</div>
+					<div class="right">
+						<a class="clear" onclick = "clearComplete()">clear complete</a>
+					</div>
+				</div>
+
+			</div>
+			<p class="mini">Double-click to edit a todo</p>
+			<p class="mini">Written by <a href="http://evanyou.me/">Evan You</a></p>
+			<p class="mini">Part of<a href="http://todomvc.com/">Todo MVC</a></p>
+		</div>
+	</div>
+<script src="http://zeptojs.com/zepto.min.js"></script>
+<script type="text/javascript" src="todo.js"></script>
+</body>
+</html>
